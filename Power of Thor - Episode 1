@@ -47,7 +47,6 @@ class Player
                 {
                     direction = "S";
                     initialTy++;
-
                 }
             }
             else if (lightY < initialTy)
@@ -75,10 +74,12 @@ class Player
                 if (lightX > initialTx)
                 {
                     direction = "E";
+                    initialTx++;
                 }
                 else if (lightX < initialTx)
                 {
                     direction = "W";
+                    initialTx--;
                 }
             }
 
