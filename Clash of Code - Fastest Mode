@@ -1,0 +1,37 @@
+using System;
+using System.Linq;
+using System.IO;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution
+{
+    static void Main(string[] args)
+    {
+        string course = Console.ReadLine();
+        string answer = "";
+
+        if (course == "HTML" || course == "CSS" || course ==  "JavaScript"  || course == "Bootstrap"  || course == "Tailwind"  || course == "CSS" || course ==  "React" || course ==  "Vue.js" || course ==  "Angular")
+        {
+            answer = "frontend";
+        }
+        else if (course == "Node.JS" || course ==  "Express.js" || course ==  "MySQL" || course ==  "MongoDB")
+        {
+            answer = "backend";
+        }
+        else
+        {
+            answer = "false";
+        }
+
+        // Write an answer using Console.WriteLine()
+        // To debug: Console.Error.WriteLine("Debug messages...");
+
+        Console.WriteLine(answer);
+    }
+}
