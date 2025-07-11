@@ -1,0 +1,36 @@
+using System;
+using System.Linq;
+using System.IO;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Solution
+{
+    static void Main(string[] args)
+    {
+        int f = int.Parse(Console.ReadLine());
+        int g = int.Parse(Console.ReadLine());
+        int d = int.Parse(Console.ReadLine());
+        int remaining = g - d;
+        if (f <= g-d)
+        {
+            Console.WriteLine("The remaining money is:" + remaining);
+            Console.WriteLine("I can afford");
+        }
+        else
+        {
+            Console.WriteLine("The remaining money is:" + remaining);
+            Console.WriteLine("I can't afford");
+        }
+
+
+        // Write an answer using Console.WriteLine()
+        // To debug: Console.Error.WriteLine("Debug messages...");
+
+    }
+}
